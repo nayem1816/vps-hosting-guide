@@ -107,3 +107,22 @@ sudo systemctl restart nginx
 # 🎉 Frontend Live:  
 - `http://yourdomain1.com`  
 - `http://yourdomain2.com` (if applicable)
+
+
+
+
+# 🚀 SSL with Certbot (HTTPS):
+
+```bash
+sudo apt install certbot python3-certbot-nginx
+```
+
+```bash
+sudo certbot --nginx -d yourdomain.com
+```
+```bash
+sudo certbot renew --dry-run
+```
+```bash
+sudo certbot renew
+```

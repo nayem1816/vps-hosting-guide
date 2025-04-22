@@ -94,3 +94,22 @@ sudo systemctl restart nginx
 ---
 
 # 🎉 Backend Live: `http://api.yourdomain.com`
+
+
+
+
+# 🚀 SSL with Certbot (HTTPS):
+
+```bash
+sudo apt install certbot python3-certbot-nginx
+```
+
+```bash
+sudo certbot --nginx -d api.yourdomain.com
+```
+```bash
+sudo certbot renew --dry-run
+```
+```bash
+sudo certbot renew
+```

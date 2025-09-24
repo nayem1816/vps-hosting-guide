@@ -58,6 +58,8 @@ sudo ufw status
 sudo ufw enable
 sudo ufw allow 'OpenSSH'
 sudo ufw allow 4000
+sudo ufw allow 80
+sudo ufw allow 443
 ```
 
 ---

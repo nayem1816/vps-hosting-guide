@@ -27,6 +27,8 @@ nano .env
 
 ```bash
 npm run build
+
+pm2 start npm --name "my-next-app" -- start
 ```
 
 ---

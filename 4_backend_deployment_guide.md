@@ -83,6 +83,8 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
     }
 }
+
+pm2 start npm --name "my-next-app" -- start
 ```
 
 #### Enable Site & Restart Nginx
